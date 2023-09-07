@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // let user = {
+    //     name: "Jimmy",
+        
+    //     sayHi() {
+    //         alert(this.name);
+    //     }
+    // };        
+
+    // user.sayHi();
+
+    let user = { name: "Jimmy"};
+    let admin = { name: "new_tron"};
+    
+    function sayHi() {
+        alert( this.name );
+    }
+
+    user.f = sayHi;
+    admin.f = sayHi;
+
+    user.f();
+    admin.f();
+    </script>
+</body>
+</html>
